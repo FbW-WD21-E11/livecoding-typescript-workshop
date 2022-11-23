@@ -1,3 +1,4 @@
+//example todo type
 export type Todo = {
     id:number, 
     title:string, 
@@ -5,12 +6,11 @@ export type Todo = {
 }
 
 //union of multiple types 
-//combintion of the folling types
 export type WindowStates = "open" | "closed" | "minimized";
 
-
+//example of enumeration 
 export enum WindowEnum {
   open = 1, 
-  closed =2,
+  closed = 2,
   minimized =3
 }

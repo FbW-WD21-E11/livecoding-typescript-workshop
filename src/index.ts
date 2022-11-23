@@ -3,11 +3,13 @@ import { Todo, WindowEnum, WindowStates } from "./types";
 
 import * as fs from 'fs';
 
+//declare a variable of type string                 
 let variableName2:string = "Hello typescript";
-
 console.log(variableName2);
 
-//                         parameter type    return type
+//                         parameter type    return type string = function returns a string
+//                              |               |
+//                              v               v            
 const myFirstFunction = (content:string) : string => {
     return `My content is ${content}`;
 }
@@ -17,8 +19,8 @@ const result:string = myFirstFunction("Check if there was a")
 const todo:Todo = {title:"Testing", id:1, completed:true}
 todo.completed = false;
 
-//exmaple widowstates
-const w:WindowStates = "closed"
+//example widowstates
+const w:WindowStates = "closed" 
 const t:WindowEnum = WindowEnum.minimized;
 
 const tea = new Tea(2.20,"GREENTEA",false);
