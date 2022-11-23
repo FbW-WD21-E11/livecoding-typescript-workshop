@@ -13,7 +13,9 @@ console.log(variableName2);
 const myFirstFunction = (content:string) : string => {
     return `My content is ${content}`;
 }
-const result:string = myFirstFunction("Check if there was a")
+
+const result:string = myFirstFunction("testing")
+console.log(result);
 
 //example todo type
 const todo:Todo = {title:"Testing", id:1, completed:true}
@@ -23,6 +25,7 @@ todo.completed = false;
 const w:WindowStates = "closed" 
 const t:WindowEnum = WindowEnum.minimized;
 
+//declare object Tea
 const tea = new Tea(2.20,"GREENTEA",false);
 tea.setTasty();
 console.log("the tea is now tasty:", tea.isTasty);
@@ -30,4 +33,3 @@ console.log("the tea is now tasty:", tea.isTasty);
 //we installed @types/node for this. 
 fs.writeFileSync("hello.txt", `The tea is tasty: ${tea.isTasty}` )
 
-console.log(result);
